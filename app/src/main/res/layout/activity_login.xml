@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbg"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/shop_logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginBottom="40sp"
+        android:text="@string/user_login"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorDarkRed"
+        android:textSize="22sp" />
+
+
+    >
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="266dp"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorRed"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/email"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="343dp"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorRed"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/logbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="461dp"
+        android:background="@drawable/btnloginbg"
+        android:textColor="@color/colorWhite"
+
+        android:text="@string/user_login"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="412dp"
+        android:text="Forget Password ?"
+        android:textColor="@color/colorDarkRed" />
+
+</RelativeLayout>
